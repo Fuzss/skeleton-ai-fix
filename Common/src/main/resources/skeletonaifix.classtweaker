@@ -2,5 +2,9 @@ classTweaker    v2  official
 accessible  field   net/minecraft/world/entity/monster/skeleton/AbstractSkeleton    bowGoal Lnet/minecraft/world/entity/ai/goal/RangedBowAttackGoal;
 accessible  method  net/minecraft/world/entity/monster/skeleton/AbstractSkeleton    getHardAttackInterval   ()I
 accessible  method  net/minecraft/world/entity/monster/skeleton/AbstractSkeleton    getAttackInterval   ()I
+accessible  method  net/minecraft/world/entity/monster/skeleton/Bogged  getHardAttackInterval   ()I
+accessible  method  net/minecraft/world/entity/monster/skeleton/Bogged  getAttackInterval   ()I
+accessible  method  net/minecraft/world/entity/monster/skeleton/Parched getHardAttackInterval   ()I
+accessible  method  net/minecraft/world/entity/monster/skeleton/Parched getAttackInterval   ()I
 accessible  field   net/minecraft/world/entity/ai/goal/RangedBowAttackGoal  attackRadiusSqr F
 accessible  field   net/minecraft/world/entity/ai/goal/RangedBowAttackGoal  strafingTime    I

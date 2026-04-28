@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "skeletonaifix",
         "group": "fuzs.skeletonaifix",
         "name": "Skeleton AI Fix",
-        "version": "21.11.0",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -36,13 +37,13 @@
     ],
     "links": [
         {
-            "name": "github",
-            "slug": "skeletonaifix"
-        },
-        {
             "name": "curseforge",
             "slug": "skeleton-ai-fix",
             "id": "319351"
+        },
+        {
+            "name": "github",
+            "slug": "skeleton-ai-fix"
         },
         {
             "name": "modrinth",

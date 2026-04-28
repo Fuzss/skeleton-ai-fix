@@ -1,7 +1,7 @@
-package fuzs.skeletonaifix.init;
+package fuzs.skeletonaifix.common.init;
 
-import fuzs.puzzleslib.api.init.v3.tags.TagFactory;
-import fuzs.skeletonaifix.SkeletonAIFix;
+import fuzs.puzzleslib.common.api.init.v3.tags.TagFactory;
+import fuzs.skeletonaifix.common.SkeletonAIFix;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 

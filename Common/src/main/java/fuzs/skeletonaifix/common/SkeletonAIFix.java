@@ -1,10 +1,10 @@
-package fuzs.skeletonaifix;
+package fuzs.skeletonaifix.common;
 
-import fuzs.puzzleslib.api.config.v3.ConfigHolder;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
-import fuzs.puzzleslib.api.event.v1.entity.EntityTickEvents;
-import fuzs.skeletonaifix.config.ServerConfig;
-import fuzs.skeletonaifix.init.ModRegistry;
+import fuzs.puzzleslib.common.api.config.v3.ConfigHolder;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
+import fuzs.puzzleslib.common.api.event.v1.entity.EntityTickEvents;
+import fuzs.skeletonaifix.common.config.ServerConfig;
+import fuzs.skeletonaifix.common.init.ModRegistry;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.entity.Entity;
@@ -32,8 +32,8 @@ public class SkeletonAIFix implements ModConstructor {
     }
 
     private static void onEndEntityTick(Entity entity) {
-        if (entity instanceof AbstractSkeleton abstractSkeleton && abstractSkeleton.getType()
-                .is(ModRegistry.WELL_BEHAVED_SKELETONS_ENTITY_TYPE_TAG)) {
+        if (entity instanceof AbstractSkeleton abstractSkeleton
+                && abstractSkeleton.is(ModRegistry.WELL_BEHAVED_SKELETONS_ENTITY_TYPE_TAG)) {
             RangedBowAttackGoal<AbstractSkeleton> bowGoal = abstractSkeleton.bowGoal;
             // disable strafing behavior
             bowGoal.strafingTime = Integer.MIN_VALUE;
@@ -73,7 +73,7 @@ public class SkeletonAIFix implements ModConstructor {
         return (int) (baseAttackInterval + scaledAttackInterval);
     }
 
-    static double easeOutQuad(double x) {
+    private static double easeOutQuad(double x) {
         return 1.0 - (1.0 - x) * (1.0 - x);
     }
 
